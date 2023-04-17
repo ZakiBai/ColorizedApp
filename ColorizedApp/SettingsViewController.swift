@@ -24,9 +24,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet var greenTextField: UITextField!
     @IBOutlet var blueTextField: UITextField!
     
+    
+    //MARK: - Public Properties
     var viewColor: UIColor!
     unowned var delegate: SettingsViewControllerDelegate!
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 10
@@ -38,10 +41,14 @@ class SettingsViewController: UIViewController {
         setValue(for: redSlider, greenSlider, blueSlider)
         setValue(for: redLabel, greenLabel, blueLabel)
         setValue(for: redTextField, greenTextField, blueTextField)
-        
-
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    //MARK: - IB Actions
     @IBAction func rgbSlider(_ sender: UISlider) {
         switch sender {
         case redSlider:
@@ -109,5 +116,9 @@ private extension SettingsViewController {
     func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
-        
+}
+
+//MARK: -UITextFieldDelegate
+extension SettingsViewController: UITextFieldDelegate {
+    
 }
