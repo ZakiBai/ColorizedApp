@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		35941C8329ED628500642F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35941C8229ED628500642F7B /* AppDelegate.swift */; };
 		35941C8529ED628500642F7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35941C8429ED628500642F7B /* SceneDelegate.swift */; };
-		35941C8729ED628500642F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35941C8629ED628500642F7B /* ViewController.swift */; };
+		35941C8729ED628500642F7B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35941C8629ED628500642F7B /* MainViewController.swift */; };
 		35941C8A29ED628500642F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35941C8829ED628500642F7B /* Main.storyboard */; };
 		35941C8C29ED628700642F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35941C8B29ED628700642F7B /* Assets.xcassets */; };
 		35941C8F29ED628700642F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35941C8D29ED628700642F7B /* LaunchScreen.storyboard */; };
+		35941C9929ED657E00642F7B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35941C9829ED657E00642F7B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35941C7F29ED628500642F7B /* ColorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35941C8229ED628500642F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35941C8429ED628500642F7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35941C8629ED628500642F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35941C8629ED628500642F7B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		35941C8929ED628500642F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35941C8B29ED628700642F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35941C8E29ED628700642F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35941C9029ED628700642F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35941C9829ED657E00642F7B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				35941C8229ED628500642F7B /* AppDelegate.swift */,
 				35941C8429ED628500642F7B /* SceneDelegate.swift */,
-				35941C8629ED628500642F7B /* ViewController.swift */,
+				35941C8629ED628500642F7B /* MainViewController.swift */,
+				35941C9829ED657E00642F7B /* SettingsViewController.swift */,
 				35941C8829ED628500642F7B /* Main.storyboard */,
 				35941C8B29ED628700642F7B /* Assets.xcassets */,
 				35941C8D29ED628700642F7B /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35941C8729ED628500642F7B /* ViewController.swift in Sources */,
+				35941C8729ED628500642F7B /* MainViewController.swift in Sources */,
 				35941C8329ED628500642F7B /* AppDelegate.swift in Sources */,
 				35941C8529ED628500642F7B /* SceneDelegate.swift in Sources */,
+				35941C9929ED657E00642F7B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
